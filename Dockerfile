@@ -11,7 +11,6 @@ RUN apt-get update \
     && cd zogminer \
     && ./zcutil/fetch-params.sh \
     && ./zcutil/build.sh -j$(nproc) \
-    && ls -la \
     && mv ./src/zcash-miner /usr/local/bin/zogminer \
     && chmod a+x /usr/local/bin/zogminer \
     && cd .. \
