@@ -22,3 +22,4 @@ RUN apt-get update \
     && rm -rf /var/lib/{apt,dpkg,cache,log}
 
 ENTRYPOINT ["zogminer"]
+CMD ["--help"]

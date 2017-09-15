@@ -15,7 +15,7 @@ $ docker run -d --device /dev/dri:/dev/dri --name YOUR_CONTAINER_NAME calvintam2
 Get `zogminer` options with:
 
 ```console
-$ docker run --rm calvintam236/zogminer:amd --help
+$ docker run --rm calvintam236/zogminer:amd
 ```
 
 Fetch logs of a container:
