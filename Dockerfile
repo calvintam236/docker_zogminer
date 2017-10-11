@@ -10,7 +10,7 @@ RUN apt-get update \
     && git clone https://github.com/nginnever/zogminer.git \
     && cd zogminer \
     && ./zcutil/fetch-params.sh \
-    && ./zcutil/build.sh -j$(nproc) \
+    && ./zcutil/build.sh \
     && mv ./src/zcash-miner /usr/local/bin/zogminer \
     && chmod a+x /usr/local/bin/zogminer \
     && cd .. \
