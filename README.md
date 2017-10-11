@@ -9,7 +9,7 @@ Zogminer supports Zcash (ZEC).
 Run in background:
 
 ```console
-$ docker run -d --device /dev/dri:/dev/dri --name YOUR_CONTAINER_NAME calvintam236/zogminer:amd -stratum=YOUR_POOL_ADDRESS -user=YOUR_USERNAME.YOUR_WORKER_NAME -password=YOUR_WORKER_PASSWORD -G
+$ docker run -d --device /dev/kfd --device /dev/dri --name YOUR_CONTAINER_NAME calvintam236/zogminer:amd -stratum=YOUR_POOL_ADDRESS -user=YOUR_USERNAME.YOUR_WORKER_NAME -password=YOUR_WORKER_PASSWORD -G
 ```
 
 Get `zogminer` options with:
