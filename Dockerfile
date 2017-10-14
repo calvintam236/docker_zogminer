@@ -16,7 +16,7 @@ RUN apt-get update \
     && cd .. \
     && rm -r zogminer \
     && rm -r /root/.zcash-params \
-    && apt-get -y remove ca-certificates ca-certificates git autoconf automake g++-multilib bsdmainutils build-essential libc6-dev libtool m4 mesa-common-dev ncurses-dev opencl-headers pkg-config python unzip vim-common wget zlib1g-dev \
+    && apt-get -y remove ca-certificates ca-certificates git autoconf automake bsdmainutils build-essential libc6-dev libtool m4 mesa-common-dev ncurses-dev opencl-headers pkg-config python unzip vim-common wget zlib1g-dev \
     && apt-get -y autoremove \
     && apt-get clean autoclean \
     && rm -rf /var/lib/{apt,dpkg,cache,log}
